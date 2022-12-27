@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 interface Persona {
   nombre: string;
-  favoritos: Favorito[];  
+  favoritos: Favorito[];
 }
 
 interface Favorito {
@@ -23,10 +23,10 @@ export class DinamicosComponent {
   nuevoJuego: string = '';
 
   persona: Persona = {
-    nombre: 'Pato',
+    nombre: 'Fernando',
     favoritos: [
-        { id: 1, nombre: 'Shadow of War' },
-        { id: 2, nombre: 'Metal Slug' },
+      { id: 1, nombre: 'Metal Gear' },
+      { id: 2, nombre: 'Death Stranding' },
     ]
   }
 
@@ -41,10 +41,10 @@ export class DinamicosComponent {
   }
 
   eliminar( index: number ) {
-    this.persona.favoritos.splice(index, 1)
+    this.persona.favoritos.splice(index, 1);
   }
 
-  
+
   guardar() {
     console.log('formulario posteado');
   }

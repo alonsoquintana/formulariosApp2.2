@@ -6,14 +6,14 @@
 
     <!-- Radio -->
     <div class="row mb-3">
-        <label for="col-sm-3 col-form-label">Género</label>
+        <label class="col-sm-3 col-form-label">Género</label>
         <div class="col-sm-9">
 
             <div class="form-check">
                 <input class="form-check-input"
                        type="radio"
                        value="M"
-                       [ngModel]="persona.genero"
+                       [(ngModel)]="persona.genero"
                        name="radioGenero"
                        id="radioMasculino"
                        required>
@@ -31,9 +31,8 @@
                        id="radioFemenino"
                        required>
                 <label class="form-check-label" for="radioFemenino">
-                    Femenino
+                  Femenino
                 </label>
-
             </div>
 
         </div>
@@ -41,10 +40,10 @@
 
     <!-- Switches -->
     <div class="row mb-3">
-        <label for="col-sm-3 col-form-label">Notificaciones</label>
+        <label class="col-sm-3 col-form-label">Notificaciones</label>
         <div class="col-sm-9">
 
-            <div class="form-check form-switch" mt-2>
+            <div class="form-check form-switch mt-2">
                 <input class="form-check-input"
                        type="checkbox"
                        [(ngModel)]="persona.notificaciones"
@@ -58,7 +57,7 @@
 
     <!-- Switches -->
     <div class="row mb-3">
-        <label for="col-sm-3 col-form-label"></label>
+        <label class="col-sm-3 col-form-label"></label>
         <div class="col-sm-9">
             <div class="form-check">
                 <input class="form-check-input"
@@ -73,7 +72,7 @@
             </div>
         </div>
     </div>
-
+    
 
     <!-- Boton submit -->
     <div class="row">
@@ -87,7 +86,7 @@
 
 </form>
 
-<h5>Valor de formulario</h5>
+<h5>Valor del formulario</h5>
 <pre>{{ miFormulario.value | json }}</pre>
 <br>
 

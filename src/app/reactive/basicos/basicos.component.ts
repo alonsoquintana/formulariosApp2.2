@@ -16,7 +16,7 @@ export class BasicosComponent implements OnInit {
   // })
 
   miFormulario: FormGroup = this.fb.group({
-    nombre: [ , [ Validators.required, Validators.minLength(3) ] ],
+    nombre: [ , [ Validators.required, Validators.minLength(3) ]   ],
     precio: [ , [ Validators.required, Validators.min(0)] ],
     existencias: [ , [ Validators.required, Validators.min(0)] ],
   })

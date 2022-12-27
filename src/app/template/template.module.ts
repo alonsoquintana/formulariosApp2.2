@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { TemplateRoutingModule } from './template-routing.module';
+import { BasicosComponent } from './basicos/basicos.component';
 import { DinamicosComponent } from './dinamicos/dinamicos.component';
 import { SwitchesComponent } from './switches/switches.component';
-import { BasicosComponent } from './basicos/basicos.component';
 import { CustomMinDirective } from './directives/custom-min.directive';
 
 
@@ -23,4 +23,4 @@ import { CustomMinDirective } from './directives/custom-min.directive';
     TemplateRoutingModule
   ]
 })
-export class TemplateModule {}
+export class TemplateModule { }
